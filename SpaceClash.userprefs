@@ -1,0 +1,44 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Src/Global/GlobalManager.cs">
+    <Files>
+      <File FileName="Assets/Src/MainPanel/MainPanel.cs" Line="205" Column="2" />
+      <File FileName="Assets/Src/MainPanel/SubPages/RoundSelectionPage.cs" Line="4" Column="22" />
+      <File FileName="Assets/Src/MainPanel/SubPages/RepairRoomPage.cs" Line="1" Column="1" />
+      <File FileName="Assets/Src/Global/GlobalManager.cs" Line="15" Column="2" />
+      <File FileName="Assets/Src/LoadingPanel/LoadingController.cs" Line="22" Column="55" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Assembly-CSharp" expanded="True">
+            <Node name="Src" expanded="True">
+              <Node name="Global" expanded="True">
+                <Node name="GlobalManager.cs" selected="True" />
+              </Node>
+              <Node name="LoadingPanel" expanded="True" />
+              <Node name="MainPanel" expanded="True">
+                <Node name="SubPages" expanded="True" />
+              </Node>
+              <Node name="Panel" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>btnsTrans</Value>
+          <Value>this</Value>
+          <Value>this</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
