@@ -123,6 +123,11 @@
      <Compile Include="Assets\GoKit\properties\splines\GoSplineCubicBezierSolver.cs" />
      <Compile Include="Assets\GoKit\properties\splines\GoSplineQuadraticBezierSolver.cs" />
      <Compile Include="Assets\GoKit\properties\splines\GoSplineStraightLineSolver.cs" />
+     <Compile Include="Assets\Src\Game\BuffManager.cs" />
+     <Compile Include="Assets\Src\Game\EnemyController.cs" />
+     <Compile Include="Assets\Src\Game\GameCtroller.cs" />
+     <Compile Include="Assets\Src\Game\HpAndScoreController.cs" />
+     <Compile Include="Assets\Src\Game\MissleController.cs" />
      <Compile Include="Assets\Src\Game\PlayerShipController.cs" />
      <Compile Include="Assets\Src\Global\GlobalManager.cs" />
      <Compile Include="Assets\Src\LoadingPanel\LoadingController.cs" />

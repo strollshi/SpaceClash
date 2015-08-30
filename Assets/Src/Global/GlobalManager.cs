@@ -6,12 +6,16 @@ using System;
 
 public class GlobalManager : MonoBehaviour {
 
+	public static int[] lvScore = {10,20,30,40,50,60,70,80,90};
+
 	public static string LoadSceneName;
 
 	public static int score = 0;
 	public static bool isPassed = false;
 	public static int exp;
 	public static int level;
+	public static Color shipColor;
+	public static int hp;
 
 	// Use this for initialization
 	void Start () {
@@ -21,9 +25,5 @@ public class GlobalManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
-	}
-
-	public static void CreateInfo(){
-		Application.persistentDataPath
 	}
 }

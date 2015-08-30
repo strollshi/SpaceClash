@@ -1,21 +1,20 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Src/Global/GlobalManager.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Src/Game/PlayerShipController.cs">
     <Files>
-      <File FileName="Assets/Src/MainPanel/MainPanel.cs" Line="205" Column="2" />
-      <File FileName="Assets/Src/MainPanel/SubPages/RoundSelectionPage.cs" Line="4" Column="22" />
-      <File FileName="Assets/Src/MainPanel/SubPages/RepairRoomPage.cs" Line="1" Column="1" />
-      <File FileName="Assets/Src/Global/GlobalManager.cs" Line="15" Column="2" />
-      <File FileName="Assets/Src/LoadingPanel/LoadingController.cs" Line="22" Column="55" />
+      <File FileName="Assets/Src/Game/MissleController.cs" Line="18" Column="23" />
+      <File FileName="Assets/Src/Game/GameCtroller.cs" Line="19" Column="2" />
+      <File FileName="Assets/Src/Game/PlayerShipController.cs" Line="73" Column="52" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="Src" expanded="True">
-              <Node name="Global" expanded="True">
-                <Node name="GlobalManager.cs" selected="True" />
+              <Node name="Game" expanded="True">
+                <Node name="PlayerShipController.cs" selected="True" />
               </Node>
+              <Node name="Global" expanded="True" />
               <Node name="LoadingPanel" expanded="True" />
               <Node name="MainPanel" expanded="True">
                 <Node name="SubPages" expanded="True" />
