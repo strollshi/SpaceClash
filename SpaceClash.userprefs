@@ -1,10 +1,14 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Src/Game/PlayerShipController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Src/Game/Ship/EnemyController.cs">
     <Files>
-      <File FileName="Assets/Src/Game/MissleController.cs" Line="18" Column="23" />
-      <File FileName="Assets/Src/Game/GameCtroller.cs" Line="19" Column="2" />
-      <File FileName="Assets/Src/Game/PlayerShipController.cs" Line="73" Column="52" />
+      <File FileName="Assets/Src/Game/Ship/PlayerShipController.cs" Line="76" Column="27" />
+      <File FileName="Assets/Src/Game/Ship/MyShipColliderController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Src/Game/Asteroid/AsteroidExplosionController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Src/Game/Asteroid/AsteroidManager.cs" Line="30" Column="4" />
+      <File FileName="Assets/Src/Game/Asteroid/AsteroidController.cs" Line="20" Column="43" />
+      <File FileName="Assets/Src/Game/Ship/EnemyShipManager.cs" Line="27" Column="18" />
+      <File FileName="Assets/Src/Game/Ship/EnemyController.cs" Line="18" Column="4" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,14 +16,16 @@
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="Src" expanded="True">
               <Node name="Game" expanded="True">
-                <Node name="PlayerShipController.cs" selected="True" />
+                <Node name="Asteroid" expanded="True" />
+                <Node name="Missle" expanded="True" selected="True" />
+                <Node name="Ship" expanded="True" />
+                <Node name="UI" expanded="True" />
               </Node>
               <Node name="Global" expanded="True" />
               <Node name="LoadingPanel" expanded="True" />
               <Node name="MainPanel" expanded="True">
                 <Node name="SubPages" expanded="True" />
               </Node>
-              <Node name="Panel" expanded="True" />
             </Node>
           </Node>
         </State>

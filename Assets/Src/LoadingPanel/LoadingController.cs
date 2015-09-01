@@ -19,7 +19,7 @@ public class LoadingController : MonoBehaviour {
 			onProgress();
 		});
 		config.onComplete (delegate {
-			Application.LoadLevel(GlobalManager.LoadSceneName);
+			GlobalManager.GotoGamePanel();
 		});
 		Go.to (ProgressBar.transform, 4, config);
 	}

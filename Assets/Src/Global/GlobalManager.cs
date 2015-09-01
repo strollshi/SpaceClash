@@ -26,4 +26,17 @@ public class GlobalManager : MonoBehaviour {
 	void Update () {
 	
 	}
+
+
+	public static void GotoStatisticPanel(){
+		Application.LoadLevel ("StatisticScene");
+	}
+
+	public static void GotoLoadingPanel(){
+		Application.LoadLevel ("LoadingScene");
+	}
+
+	public static void GotoGamePanel(){
+		Application.LoadLevel ("GameScene");
+	}
 }

@@ -23,8 +23,7 @@ public class RoundSelectionPage : MonoBehaviour {
 	}
 
 	private void OnClickRoundSelectionBtn(){
-		GlobalManager.LoadSceneName = "GameScene";
-		Application.LoadLevel ("LoadingScene");
+		GlobalManager.GotoLoadingPanel ();
 	}
 
 	// Use this for initialization
