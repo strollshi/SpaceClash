@@ -23,7 +23,7 @@ public class AsteroidController : MonoBehaviour {
 		this.transform.localScale = new Vector3 (size, size, size);
 
 //		this.gameObject.transform.localPosition = new Vector3 (0, 0, 0);
-		Invoke ("DestroyAsteroid", 8);
+		Invoke ("DestroyAsteroid", 15);
 	}
 
 	void DestroyAsteroid(){

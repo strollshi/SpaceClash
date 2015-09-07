@@ -18,6 +18,13 @@ public class HpAndScoreController : MonoBehaviour {
 	public void UpdateScore(){
 		_score++;
 		ScoreTxt.GetComponent<Text> ().text = "Score: " + _score.ToString ();
+		if (_score >= GlobalManager.lvScore [GlobalManager.level]) {
+			GlobalManager.isPassed = true;
+			GlobalManager.level++;
+			GlobalManager.GotoStatisticPanel ();
+			PlayerPrefs.SetInt("Score",GlobalManager.score);
+			PlayerPrefs.SetInt("Level",GlobalManager.level);
+		}
 	}
 
 	private static int damage = 15;

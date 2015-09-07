@@ -134,12 +134,13 @@
      <Compile Include="Assets\Src\Game\UI\BuffManager.cs" />
      <Compile Include="Assets\Src\Game\UI\HpAndScoreController.cs" />
      <Compile Include="Assets\Src\Global\GlobalManager.cs" />
-     <Compile Include="Assets\Src\LoadingPanel\LoadingController.cs" />
-     <Compile Include="Assets\Src\MainPanel\MainPanel.cs" />
-     <Compile Include="Assets\Src\MainPanel\SubPages\RepairRoomPage.cs" />
-     <Compile Include="Assets\Src\MainPanel\SubPages\RoundSelectionPage.cs" />
-     <Compile Include="Assets\Src\MainPanel\SubPages\SettingPage.cs" />
+     <Compile Include="Assets\Src\Panel\LoadingPanel\LoadingController.cs" />
+     <Compile Include="Assets\Src\Panel\MainPanel\MainPanel.cs" />
+     <Compile Include="Assets\Src\Panel\MainPanel\SubPages\RepairRoomPage.cs" />
+     <Compile Include="Assets\Src\Panel\MainPanel\SubPages\RoundSelectionPage.cs" />
+     <Compile Include="Assets\Src\Panel\MainPanel\SubPages\SettingPage.cs" />
      <Compile Include="Assets\Src\Panel\Panel.cs" />
+     <Compile Include="Assets\Src\Panel\StatisticPanel\StatisticPanel.cs" />
      <None Include="Assets\GoKit\easing\easeEquationsLicense.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

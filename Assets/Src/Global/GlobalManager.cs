@@ -39,4 +39,8 @@ public class GlobalManager : MonoBehaviour {
 	public static void GotoGamePanel(){
 		Application.LoadLevel ("GameScene");
 	}
+
+	public static void GotoUIPanel(){
+		Application.LoadLevel ("UIScene");
+	}
 }

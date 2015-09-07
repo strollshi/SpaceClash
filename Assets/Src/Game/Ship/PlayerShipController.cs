@@ -9,13 +9,31 @@ public class PlayerShipController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+		this.gameObject.transform.position = new Vector3 (-400, 0, 0);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		keyDownDetector ();
 		shoot ();
+//		positionRestrain ();
+	}
+
+	private float _deltaX = -400;
+	private float _deltaY = 0;
+	private void positionRestrain(){
+		_deltaX = this.gameObject.transform.position.x - _deltaX;
+		if (this.gameObject.transform.position.x + _deltaX > -100) {
+			this.gameObject.transform.position = new Vector3(-100,this.gameObject.transform.position.y,this.gameObject.transform.position.z);
+		}else if(this.gameObject.transform.position.x + _deltaX < -700){
+			this.gameObject.transform.position = new Vector3(-700,this.gameObject.transform.position.y,this.gameObject.transform.position.z);
+		}
+		_deltaY = this.gameObject.transform.position.y - _deltaY;
+		if(this.gameObject.transform.position.y + _deltaY > 0){
+			this.gameObject.transform.position = new Vector3(this.gameObject.transform.position.x,0,this.gameObject.transform.position.z);
+		}else if(this.gameObject.transform.position.y + _deltaY < -150){
+			this.gameObject.transform.position = new Vector3(this.gameObject.transform.position.x,-150,this.gameObject.transform.position.z);
+		}
 	}
 
 	private void keyDownDetector(){
@@ -78,11 +96,15 @@ public class PlayerShipController : MonoBehaviour {
 	public GameObject Explosion;
 	public void DestroyPlayerShip(){
 		expls = Instantiate(Explosion,this.gameObject.transform.position, Quaternion.Euler(new Vector3(0,0,0))) as GameObject;
-		Destroy (this.gameObject);
-		Invoke("gotoStatisticPanel",3);
-	}
-
-	void gotoStatisticPanel(){
-		GlobalManager.GotoStatisticPanel ();
+		this.gameObject.SetActive (false);
+		GoTweenConfig config = new GoTweenConfig ();
+		config.onComplete (delegate {
+			Destroy (this.gameObject);
+			GlobalManager.isPassed = false;
+			GlobalManager.GotoStatisticPanel ();
+			PlayerPrefs.SetInt("Score",GlobalManager.score);
+			PlayerPrefs.SetInt("Level",GlobalManager.level);
+		});
+		Go.to (this.gameObject.transform, 2, config);
 	}
 }
